@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061b36">
+  <title>Data Beacon IQ | Corporate Data Products</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">✦</div>
+        <div class="brand-name">BARCLAYS</div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-section="home"><span>⌂</span> Home</button>
+        <button class="nav-item" data-section="products"><span>▤</span> Data Products</button>
+        <button class="nav-item" data-section="usecases"><span>◈</span> Use Cases</button>
+        <button class="nav-item" data-section="catalogue"><span>▥</span> Data Catalogue</button>
+        <button class="nav-item" data-section="discover"><span>⌕</span> Discover & Explore</button>
+        <button class="nav-item" data-section="workspace"><span>♙</span> My Workspace</button>
+        <button class="nav-item" data-section="support"><span>?</span> Requests & Support</button>
+      </nav>
+
+      <div class="quick-access">
+        <div class="eyebrow">QUICK ACCESS</div>
+        <button>⌑ <span>Submit a Data Request</span></button>
+        <button>⌁ <span>Go to Marketplace</span></button>
+        <button>↗ <span>View Pipeline</span></button>
+        <button>?</span> <span>Help & Support</span></button>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="wave"></div>
+        <p>Better data.<br>Smarter decisions.<br>A stronger tomorrow.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuBtn">☰</button>
+        <div class="top-search">
+          <span>⌕</span>
+          <input id="globalSearch" placeholder="Search data products, use cases, domains, or keywords..." />
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn">♧<i></i></button>
+          <div class="avatar">SD</div>
+          <div class="profile"><strong>Sheetal Dash</strong><small>Business Enablement Lead</small></div>
+          <span>⌄</span>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow cyan">DATA BEACON IQ</div>
+          <h1>Your one-stop shop for all<br><strong>Corporate Data Products</strong></h1>
+          <p>Discover, explore and consume trusted data products to power insights, innovation and better business outcomes.</p>
+          <div class="hero-search">
+            <span>⌕</span>
+            <input id="heroSearch" placeholder="Search data products, use cases, domains or keywords..." />
+            <button onclick="runSearch()">→</button>
+          </div>
+          <div class="chips">
+            <button data-query="Customer 360">Customer 360</button>
+            <button data-query="Transaction Intelligence">Transaction Intelligence</button>
+            <button data-query="Regulatory Reporting">Regulatory Reporting</button>
+            <button data-query="Market Insights">Market Insights</button>
+            <button data-query="GenAI Insights">GenAI Insights</button>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true"></div>
+      </section>
+
+      <section class="stats">
+        <article class="stat-card"><div class="stat-icon blue">▤</div><div><strong>20</strong><span>Total Data Products</span><small>↑ +2 since last month</small></div><b>›</b></article>
+        <article class="stat-card"><div class="stat-icon teal">◎</div><div><strong>19</strong><span>Use Cases</span><small>Across business & regulatory</small></div><b>›</b></article>
+        <article class="stat-card"><div class="stat-icon purple">♧</div><div><strong>12</strong><span>Business Domains</span><small>Corporate, Risk, Finance, ...</small></div><b>›</b></article>
+        <article class="stat-card"><div class="stat-icon green">↗</div><div><strong>85%</strong><span>Adoption Rate</span><small>↑ +12% QoQ</small></div><b>›</b></article>
+      </section>
+
+      <section class="content-grid">
+        <div class="left-column">
+          <section class="panel">
+            <div class="section-head"><h2>Explore by Business Need</h2><a>View all →</a></div>
+            <div class="domain-cards">
+              <button class="domain-card regulatory"><span>◇</span><strong>Regulatory</strong><small>Meet regulatory &<br>model risk requirements</small><i>→</i></button>
+              <button class="domain-card commercial"><span>↗</span><strong>Commercial</strong><small>Drive growth &<br>customer value</small><i>→</i></button>
+              <button class="domain-card customer"><span>♧</span><strong>Customer</strong><small>360° view for<br>better decisions</small><i>→</i></button>
+              <button class="domain-card ai"><span>✦</span><strong>AI & Innovation</strong><small>Unlock GenAI and<br>advanced analytics</small><i>→</i></button>
+              <button class="domain-card sustainability"><span>⌁</span><strong>Sustainability</strong><small>Build a more<br>sustainable future</small><i>→</i></button>
+            </div>
+          </section>
+
+          <section class="panel">
+            <div class="section-head"><h2>Featured Data Products</h2><a>View all →</a></div>
+            <div class="product-grid" id="productGrid">
+              <article class="product-card" data-search="Customer 360 commercial customer onboarding monitoring"><span class="product-icon blue">◇</span><strong>Customer 360</strong><em>Commercial</em><p>Unified customer view for KYC, onboarding and monitoring.</p><label><i></i> Live</label></article>
+              <article class="product-card" data-search="Transaction Intelligence finance financial crime"><span class="product-icon purple">▥</span><strong>Transaction Intelligence</strong><em>Finance & Financial Crime</em><p>Real-time transaction data for fraud and AML analytics.</p><label><i></i> Live</label></article>
+              <article class="product-card" data-search="Client Monitoring regulatory risk"><span class="product-icon blue">♜</span><strong>Client Monitoring</strong><em>Regulatory</em><p>Client and counterparty monitoring data for regulators.</p><label><i></i> Live</label></article>
+              <article class="product-card" data-search="Market Product Insights commercial market"><span class="product-icon purple">♧</span><strong>Market & Product Insights</strong><em>Commercial</em><p>Market, product and performance data for strategic decisions.</p><label class="pipeline"><i></i> In pipeline</label></article>
+            </div>
+          </section>
+        </div>
+
+        <aside class="right-column">
+          <section class="panel updates">
+            <div class="section-head"><h2>Latest Updates</h2><a>View all →</a></div>
+            <div class="update"><span class="update-icon green">✦</span><div><strong>9 new data products now live</strong><small>Expanding the corporate data products...</small></div><time>2d</time></div>
+            <div class="update"><span class="update-icon purple">♧</span><div><strong>Pricing Analytics use case enabled</strong><small>Driving value across Finance & Treasury</small></div><time>5d</time></div>
+            <div class="update"><span class="update-icon blue">▥</span><div><strong>Marketplace registration</strong><small>Client Monitoring data product is now...</small></div><time>1w</time></div>
+            <div class="update"><span class="update-icon orange">✦</span><div><strong>Upcoming: AI-Powered Insights</strong><small>GenAI capabilities coming to 5 data products.</small></div><time>1w</time></div>
+          </section>
+
+          <section class="panel usecases">
+            <div class="section-head"><h2>Use Cases</h2><a>View all →</a></div>
+            <div class="usecase"><span>♙</span><div><strong>Fraud Detection</strong><small>FinCrime&nbsp; | &nbsp;4 Data Products</small></div>›</div>
+            <div class="usecase"><span>♧</span><div><strong>Customer Analytics</strong><small>Commercial&nbsp; | &nbsp;6 Data Products</small></div>›</div>
+            <div class="usecase"><span>◇</span><div><strong>Risk & Compliance</strong><small>Regulatory&nbsp; | &nbsp;5 Data Products</small></div>›</div>
+            <div class="usecase"><span>✦</span><div><strong>Market Intelligence</strong><small>Commercial&nbsp; | &nbsp;4 Data Products</small></div>›</div>
+          </section>
+
+          <section class="ai-card">
+            <div class="ai-copy"><small>Introducing</small><h2>Data Beacon <b>AI</b></h2><p>Ask, analyse, and take action across your corporate data products.</p><button onclick="alert('Connect this button to your AI assistant endpoint.')">Try now →</button></div>
+            <div class="ai-orbit"></div>
+          </section>
+        </aside>
+      </section>
+
+      <footer class="footer">
+        <div><span class="footer-mark">✦</span><strong>Data Beacon IQ</strong><span class="divider">|</span><span>Trusted data. Greater possibilities.</span></div>
+        <div class="footer-nav"><span>⌕ Find</span><span>♧ Understand</span><span>⚙ Use</span><span>✦ Create Value</span></div>
+      </footer>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
